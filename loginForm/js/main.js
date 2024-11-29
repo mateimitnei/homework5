@@ -2,6 +2,7 @@ const LoginComponent = (function () {
     const alertBox = document.querySelector('.alert');
     const form = document.querySelector('.form-signin');
     const userPage = document.getElementById('user-page');
+    const title = document.getElementById('title');
 
     function setLogAndPass(data) {
         localStorage.setItem('loginData', JSON.stringify(data));
@@ -19,6 +20,7 @@ const LoginComponent = (function () {
 
     function showUserPage(email, password) {
         hideForm();
+        title.textContent = 'User Page';
 
         userPage.innerHTML = `
             <div class="container border rounded-3 box-shadow"
@@ -53,6 +55,7 @@ const LoginComponent = (function () {
             userPage.style.display = 'none';
             form.style.display = 'block';
             document.getElementById('inputPassword').value = '';
+            title.textContent = 'Login Form';
         });
     }
 
