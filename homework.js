@@ -8,7 +8,8 @@
 // • initComponent() — directly launches the application.
 // Advanced Version
 // Implement the same functionality but using a constructor function. That is, methods and properties will be located in
-// this (Example: Session 25, notes, section "Constructor Function").
+// this.
+
 // Instructions:
 // 0. Set the login and password values in localStorage that we will later check against.
 // 1. Initially, only the login form is visible on the screen.
